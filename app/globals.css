@@ -8,6 +8,10 @@ body {
     @apply h-full
 }
 
+h2 {
+    @apply text-lg text-emerald-400 font-semibold uppercase
+}
+
 body {
     @apply text-zinc-900 bg-[url(../public/img/grid.svg)] bg-center
 }

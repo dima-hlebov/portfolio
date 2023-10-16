@@ -28,6 +28,7 @@ module.exports = {
       },
       animation: {
         "blob": "blob 5s ease-in-out infinite",
+        'spin-slow': 'spin 10s linear infinite',
       },
     },
   },

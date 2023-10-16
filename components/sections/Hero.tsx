@@ -1,6 +1,5 @@
-import { Blob } from "@/components/Blob";
-import { NavigationItem } from "@/components/navigation";
-import Navigation from "@/components/navigation/Navigation";
+import { Blob } from "@/components/badges";
+import Navigation, { NavigationItem } from "@/components/navigation";
 import { Container } from "@/layouts";
 import Image from "next/image";
 
@@ -19,7 +18,7 @@ const techs: { img: StaticImport, alt: string, width: number, height: number }[]
     { img: HTMLImage, alt: "HTML", width: 40, height: 40 },
     { img: CSSImage, alt: "CSS", width: 40, height: 40 },
     { img: SassImage, alt: "Sass", width: 40, height: 40 },
-    { img: JSImage, alt: "HTML", width: 40, height: 40 },
+    { img: JSImage, alt: "JavaScript", width: 40, height: 40 },
     { img: TSImage, alt: "TypeScript", width: 40, height: 40 },
     { img: ReactImage, alt: "React", width: 40, height: 40 },
     { img: NextImage, alt: "NextJS", width: 40, height: 40 },
