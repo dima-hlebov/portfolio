@@ -9,7 +9,7 @@ export const emojiBadgeVariants = cva(
                 white: "bg-white"
             },
             size: {
-                md: "w-36 h-36 text-6xl"
+                md: "w-36 h-36 text-5xl"
 
             },
         },
