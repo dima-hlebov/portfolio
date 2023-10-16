@@ -3,7 +3,9 @@ import { Container } from "@/layouts";
 export function About() {
     return (
         <Container>
-            <div className="h-72"></div>
+            <div className="flex py-40">
+
+            </div>
         </Container>
     )
 }
