@@ -12,8 +12,12 @@ h2 {
     @apply text-lg text-emerald-400 font-semibold uppercase
 }
 
+h3 {
+    @apply text-2xl font-semibold uppercase
+}
+
 body {
-    @apply text-zinc-900 bg-[url(../public/img/grid.svg)] bg-center
+    @apply text-zinc-800 bg-[url(../public/img/grid.svg)] bg-center
 }
 
 ::-webkit-scrollbar {

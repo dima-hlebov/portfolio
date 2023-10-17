@@ -5,25 +5,26 @@ import Image from "next/image";
 
 import HTMLImage from "@/public/img/HTML.svg"
 import CSSImage from "@/public/img/CSS.svg"
-import TailwindImage from "@/public/img/TailwindCSS-Dark.svg"
+import TailwindImage from "@/public/img/TailwindCSS.svg"
 import SassImage from "@/public/img/Sass.svg"
 import JSImage from "@/public/img/JavaScript.svg"
 import TSImage from "@/public/img/TypeScript.svg"
-import NextImage from "@/public/img/NextJS-Dark.svg"
-import ReactImage from "@/public/img/React-Dark.svg"
-import ExpressImage from "@/public/img/ExpressJS-Dark.svg"
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import NextImage from "@/public/img/NextJS.svg"
+import ReactImage from "@/public/img/React.svg"
+import ExpressImage from "@/public/img/ExpressJS.svg"
+import { Icon } from "@/types";
+import { IconsList } from "@/components/lists";
 
-const techs: { img: StaticImport, alt: string, width: number, height: number }[] = [
-    { img: HTMLImage, alt: "HTML", width: 40, height: 40 },
-    { img: CSSImage, alt: "CSS", width: 40, height: 40 },
-    { img: SassImage, alt: "Sass", width: 40, height: 40 },
-    { img: JSImage, alt: "JavaScript", width: 40, height: 40 },
-    { img: TSImage, alt: "TypeScript", width: 40, height: 40 },
-    { img: ReactImage, alt: "React", width: 40, height: 40 },
-    { img: NextImage, alt: "NextJS", width: 40, height: 40 },
-    { img: ExpressImage, alt: "Express", width: 40, height: 40 },
-    { img: TailwindImage, alt: "Tailwind", width: 40, height: 40 },
+const techs: Icon[] = [
+    { img: HTMLImage, alt: "HTML" },
+    { img: CSSImage, alt: "CSS" },
+    { img: SassImage, alt: "Sass" },
+    { img: JSImage, alt: "JavaScript" },
+    { img: TSImage, alt: "TypeScript" },
+    { img: ReactImage, alt: "React" },
+    { img: NextImage, alt: "NextJS" },
+    { img: ExpressImage, alt: "Express" },
+    { img: TailwindImage, alt: "Tailwind" },
 ]
 
 export function Hero() {
@@ -52,14 +53,9 @@ export function Hero() {
                     <Blob />
                 </div>
             </div>
-            <ul className="flex items-center pt-10 gap-6">
-                <span className="font-semibold pr-4 border-r-2 border-zinc-800">Tech Skills</span>
-                {techs.map(tech =>
-                    <li key={tech.alt} className="hover:-translate-y-2 transition-transform duration-300">
-                        <Image src={tech.img} alt={tech.alt} width={tech.width} height={tech.height} />
-                    </li>
-                )}
-            </ul>
+            <div className="pt-10">
+                <IconsList heading="Tech Skills" icons={techs} isHoverable />
+            </div>
         </Container>
     )
 }
