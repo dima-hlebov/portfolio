@@ -6,8 +6,7 @@ export const containerVariants = cva(
   {
     variants: {
       size: {
-        md: "max-w-[950px]",
-
+        md: "max-w-5xl px-10",
       },
     },
     defaultVariants: {

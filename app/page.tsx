@@ -1,4 +1,4 @@
-import { About, Hero, Projects } from "@/components/sections";
+import { About, Contacts, Hero, Projects } from "@/components/sections";
 
 export default function Home() {
   return (
@@ -11,6 +11,9 @@ export default function Home() {
       </section>
       <section className="bg-gradient-to-b from-transparent via-white">
         <Projects />
+      </section>
+      <section className="bg-gradient-to-b from-transparent via-white">
+        <Contacts />
       </section>
     </main>
   )

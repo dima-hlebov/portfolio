@@ -1,1 +1,1 @@
-export type { Icon } from "./Icon.types";
+export type * from "./Icon.types";

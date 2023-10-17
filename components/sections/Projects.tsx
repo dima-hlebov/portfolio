@@ -1,5 +1,5 @@
 import { Container } from "@/layouts";
-import Card from "@/components/cards";
+import { ImageCard } from "@/components/cards";
 
 import CatPaw from "@/public/img/catpaw.jpg"
 import Next from "@/public/img/NextJS.svg"
@@ -14,7 +14,7 @@ export function Projects() {
                 <h2>Portfolio</h2>
                 <h3>Explore My Coding Journey 🛣️</h3>
                 <div className="flex justify-between gap-5 mt-10">
-                    <Card
+                    <ImageCard
                         img={CatPaw}
                         mainLink="https://catpaw-five.vercel.app/"
                         secondaryLink="https://github.com/dima-hlebov/cat-paw"
