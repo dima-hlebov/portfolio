@@ -2,6 +2,7 @@ import { Header } from '@/layouts/Header'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Open_Sans } from 'next/font/google'
+import { Provider } from 'react-redux'
 
 const openSans = Open_Sans({ subsets: ['latin'] })
 
@@ -16,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className='scroll-smooth'>
       <body className={`${openSans.className} h-full`}>
         <Header />
         {children}

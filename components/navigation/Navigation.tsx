@@ -9,7 +9,8 @@ export const navigationVariants = cva(
                 column: "flex-col",
                 row: "h-full flex-row items-center"
             },
-            size: {
+            gap: {
+                none: "",
                 sm: "gap-3",
                 md: "gap-6"
 
@@ -17,16 +18,16 @@ export const navigationVariants = cva(
         },
         defaultVariants: {
             variant: "row",
-            size: "md",
+            gap: "md",
         }
     }
 )
 
-export default function Navigation({ children, variant, size, className }:
+export default function Navigation({ children, variant, gap, className }:
     { children: React.ReactNode, className?: string } & VariantProps<typeof navigationVariants>) {
     return (
         <nav>
-            <ul className={cn(navigationVariants({ variant, size, className }))}>
+            <ul className={cn(navigationVariants({ variant, gap, className }))}>
                 {children}
             </ul>
         </nav>
