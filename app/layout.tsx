@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en" className='scroll-smooth'>
       <body className={`${openSans.className} h-full`}>
         <Header />
-        <div className='fixed z-20 bottom-5 left-5 '>
+        <div className='fixed z-20 bottom-5 left-5 md:bottom-10 md:left-10'>
           <Link href={"https://drive.google.com/file/d/1KDwoyV1K6KD1uhy6kMU_0vjHOEB6fO8h/view"}>
             <Card corners={"full"}>
               <Image
