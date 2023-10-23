@@ -24,13 +24,13 @@ import Link from "next/link";
 export function Projects() {
     return (
         <Container>
-            <div className="py-40">
+            <div className="text-center pt-28 sm:pt-60">
                 <h2>Portfolio</h2>
                 <h3>Explore My Coding Journey 🛣️</h3>
-                <div className="flex flex-wrap justify-between gap-5 mt-10">
+                <div className="flex flex-wrap justify-center gap-5 mt-10 lg:justify-between">
                     <ImageCard
                         img={CatPawImage}
-                        mainLink="https://thecatpaw.vercel.app/"
+                        mainLink="https://thepetspaw.vercel.app/"
                         secondaryLink="https://github.com/dima-hlebov/cat-paw"
                         heading="PetsPaw"
                         description="PetsPaw is an app that allows users to vote for the preferred cat images, 
@@ -82,7 +82,7 @@ export function Projects() {
                         secondaryLink="https://github.com/dima-hlebov/joke-generator"
                         heading="Joke Generator"
                         description="Introducing Chuck Norris Joke Generator - your source of endless laughter
-                         and legendary Chuck Norris humor. In your disposal a random, from category, or free search joke.
+                         and legendary Chuck Norris humor. In your disposal a random, from category, or free search jokes.
                         Enjoy a daily dose of Chuck Norris jokes and entertain your friends. Get ready to Chuckle your way through the day!"
                         icons={[
                             { img: HTML, alt: "Html" },

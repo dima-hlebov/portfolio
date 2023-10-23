@@ -7,14 +7,14 @@ export function About() {
 
     return (
         <Container>
-            <div className="flex gap-20 py-40">
-                <div className="relative">
-                    <Image className="rounded-2xl min-w-[420px]" src={Snowboard} alt={""} />
-                    <div className="absolute -right-16 -bottom-8 ">
+            <div className="flex flex-col gap-10 pt-60 lg:gap-20 lg:flex-row">
+                <div className="relative mx-auto w-fit">
+                    <Image className="w-full lg:w-auto rounded-2xl max-w-[420px]" src={Snowboard} alt={""} />
+                    <div className="absolute hidden right-1 -bottom-8 sm:block sm:-right-16">
                         <EmojiBadge text="Front-end web developer" emoji="👨🏻‍💻" />
                     </div>
                 </div>
-                <article>
+                <article className="text-center lg:text-left">
                     <h2>About me</h2>
                     <h3>A dedicated Web Developer based in Kyiv, Ukraine 📍</h3>
                     <p className="mt-5 whitespace-pre-line text-md">

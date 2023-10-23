@@ -2,7 +2,7 @@ import { About, Contacts, Hero, Projects } from "@/components/sections";
 
 export default function Home() {
   return (
-    <main className="h-[calc(100vh-56px)]">
+    <main className="h-[calc(100vh-56px)] min-h-[875px]">
       <section id="hero" className="h-full">
         <Hero />
       </section>

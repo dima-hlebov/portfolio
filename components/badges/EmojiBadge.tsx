@@ -2,14 +2,14 @@ import { cn } from "@/lib/utils"
 import { VariantProps, cva } from "class-variance-authority"
 
 export const emojiBadgeVariants = cva(
-    "relative flex justify-center items-center rounded-full",
+    "relative flex justify-center items-center rounded-full text-5xl",
     {
         variants: {
             color: {
                 white: "bg-white"
             },
             size: {
-                md: "w-36 h-36 text-5xl"
+                md: "w-28 h-28 sm:w-36 sm:h-36"
 
             },
         },
@@ -23,7 +23,7 @@ export const emojiBadgeVariants = cva(
 export function EmojiBadge({ color, size, text, emoji }: { text: string, emoji: string, } & VariantProps<typeof emojiBadgeVariants>) {
     return (
         <div className={cn(emojiBadgeVariants({ color, size }))}>
-            <svg className="absolute uppercase text-xs w-36 h-36 animate-spin-slow" viewBox="0 0 100 100">
+            <svg className={`${size} absolute text-xs uppercase animate-spin-slow`} viewBox="0 0 100 100">
                 <defs>
                     <path id="circle"
                         d="M 50, 50
