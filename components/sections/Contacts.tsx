@@ -7,7 +7,7 @@ import { EmailIcon, GithubIcon, LinkedinIcon, TelegramIcon } from "@/components/
 export function Contacts() {
     return (
         <Container>
-            <div className="py-28 sm:py-60">
+            <div className="py-28 sm:pt-60 sm:pb-30">
                 <h2>Contacts</h2>
                 <h3>Get in touch! 💬</h3>
                 <div className="grid gap-5 mt-10 sm:grid-cols-2 sm:grid-rows-2">
