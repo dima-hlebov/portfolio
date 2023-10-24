@@ -24,7 +24,7 @@ import Link from "next/link";
 export function Projects() {
     return (
         <Container>
-            <div className="text-center pt-28 sm:pt-60">
+            <div className="text-center lg:text-left pt-28 sm:pt-60">
                 <h2>Portfolio</h2>
                 <h3>Explore My Coding Journey 🛣️</h3>
                 <div className="flex flex-wrap justify-center gap-5 mt-10 lg:justify-between">

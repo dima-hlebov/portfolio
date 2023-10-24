@@ -16,7 +16,7 @@ export function About() {
                 </div>
                 <article className="text-center lg:text-left">
                     <h2>About me</h2>
-                    <h3>A dedicated Web Developer based in Kyiv, Ukraine 📍</h3>
+                    <h3>A passionate Web Developer based in Kyiv, Ukraine 📍</h3>
                     <p className="mt-5 whitespace-pre-line text-md">
                         {
                             "I have a solid foundation in web development backed by a degree in buisness aplications. " +
