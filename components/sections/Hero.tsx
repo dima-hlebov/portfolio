@@ -44,7 +44,7 @@ export function Hero() {
                         {"Hi, 👋🏻 \n I'm Dmytro Hlebov "}
                     </h1>
                     <h2 className="mt-1 text-xl font-bold uppercase md:text-2xl text-emerald-400">Web Developer</h2>
-                    <p className="mt-5 md:mt-7">Dedicated and versatile developer with a strong academical background and a passion for creating responsive, user-friendly, and accessible web applications.</p>
+                    <p className="mt-5 md:mt-7">Dedicated and versatile developer with a strong academic background and a passion for creating impactful solutions that make a difference.</p>
                     <div className="flex justify-center mt-4 md:justify-start">
                         <Navigation>
                             <NavigationItem href={"https://github.com/dima-hlebov"}>
