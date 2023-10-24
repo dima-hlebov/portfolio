@@ -11,7 +11,7 @@ export function About() {
                 <div className="relative mx-auto w-fit">
                     <Image className="w-full lg:w-auto rounded-2xl max-w-[420px]" src={Snowboard} alt={""} />
                     <div className="absolute hidden right-1 -bottom-8 sm:block sm:-right-16">
-                        <EmojiBadge text="Front-end web developer" emoji="👨🏻‍💻" />
+                        <EmojiBadge text="Web developer" emoji="👨🏻‍💻" />
                     </div>
                 </div>
                 <article className="text-center lg:text-left">
@@ -19,7 +19,7 @@ export function About() {
                     <h3>A passionate Web Developer based in Kyiv, Ukraine 📍</h3>
                     <p className="mt-5 whitespace-pre-line text-md">
                         {
-                            "I have a solid foundation in web development backed by a degree in buisness aplications. " +
+                            "I have a solid foundation in web development backed by a degree in Business Applications. " +
                             "My enthusiasm fuels the art of developing and maintaining reusable and clean code that forms the backbone of smooth, " +
                             "engaging and user-friendly interfaces. I excel in problem-solving, clear communication, creativity, and effective time management, " +
                             "which collectively empower me to navigate complex challenges, collaborate seamlessly, and deliver innovative and high-quality " +

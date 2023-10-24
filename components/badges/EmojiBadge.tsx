@@ -32,7 +32,7 @@ export function EmojiBadge({ color, size, text, emoji }: { text: string, emoji: 
                         a 37,37 0 1,1 -74,0"/>
                 </defs>
                 <text>
-                    <textPath xlinkHref="#circle" textLength={"210%"}>
+                    <textPath xlinkHref="#circle" textLength={"180%"}>
                         {text}
                     </textPath>
                 </text>
