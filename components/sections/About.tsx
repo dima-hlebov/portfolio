@@ -9,13 +9,13 @@ export function About() {
     return (
         <Container>
             <div className="flex flex-col gap-10 pt-60 lg:gap-20 lg:flex-row">
-                <div className="relative mx-auto w-fit">
+                <div className="relative order-2 mx-auto md:order-1 w-fit">
                     <Image className="w-full lg:w-auto rounded-2xl max-w-[420px]" src={Snowboard} alt={""} />
                     <div className="absolute hidden right-1 -bottom-8 sm:block sm:-right-16">
                         <EmojiBadge text="Web developer" emoji="👨🏻‍💻" />
                     </div>
                 </div>
-                <article className="text-center lg:text-left">
+                <article className="order-1 text-center md:order-2 lg:text-left">
                     <h2>About me</h2>
                     <h3>A passionate Web Developer based in Kyiv, Ukraine 📍</h3>
                     <p className="mt-5 whitespace-pre-line text-md">

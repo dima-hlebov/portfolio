@@ -7,6 +7,7 @@ import HTMLFlipBook from "react-pageflip";
 
 import DiplomaImage from "@/public/img/diploma.jpg"
 import SupplementImage from "@/public/img/supplement.jpg"
+import Image from "next/image";
 
 export function Book() {
 
@@ -23,7 +24,6 @@ export function Book() {
             usePortrait
             showCover={true}
             showPageCorners={false}
-            disableFlipByClick={true}
             maxShadowOpacity={0.25}
         >
             <div
@@ -42,13 +42,13 @@ export function Book() {
             >
                 <div className="flex h-full p-3 bg-[url(../public/img/textures/leather-texture-bake.png)] bg-[length:200px_200px] rounded-md min-[600px]:rounded-r-none min-[600px]:pr-0">
                     <div className="flex items-center w-full h-full p-2 min-[600px]:p-5 bg-slate-50">
-                        <ImageZoom src={DiplomaImage.src} alt="Diploma" zoom="200" className="rounded-md shadow-md" />
-                        {/* <Image
+                        {/* <ImageZoom src={DiplomaImage.src} alt="Diploma" zoom="200" className="rounded-md shadow-md" /> */}
+                        <Image
                             src={DiplomaImage}
                             alt="Diploma supplement"
                             quality={100}
                             className="w-full rounded-md shadow-md"
-                        /> */}
+                        />
                     </div>
                     <div className="hidden min-[600px]:block w-2 h-full shadow-inner bg-slate-50">
 
@@ -61,13 +61,13 @@ export function Book() {
             >
                 <div className="h-full p-3 bg-[url(../public/img/textures/leather-texture-bake.png)] bg-[length:200px_200px] rounded-md min-[600px]:pl-0 min-[600px]:rounded-l-none">
                     <div className="flex items-center h-full p-2 min-[600px]:p-5 bg-slate-50">
-                        <ImageZoom src={SupplementImage.src} alt="Diploma supplement" zoom="160" className="rounded-md shadow-md" />
-                        {/* <Image
+                        {/* <ImageZoom src={SupplementImage.src} alt="Diploma supplement" zoom="160" className="rounded-md shadow-md" /> */}
+                        <Image
                             src={SupplementImage}
                             alt="Diploma supplement"
                             quality={100}
                             className="w-full rounded-sm shadow-md hover:animate-show-picture"
-                        /> */}
+                        />
                     </div>
                 </div>
             </div>
