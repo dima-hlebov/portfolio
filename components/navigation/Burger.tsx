@@ -16,10 +16,11 @@ export default function Burger() {
                 <button
                     className={`hover:text-emerald-400`}
                     onClick={menuHandler}>
-                    <Menu />
+                    {isOpen ? <X /> : <Menu />}
+
                 </button>
             </div>
-            <div className={`${isOpen ? "block" : "hidden"} absolute right-5 mt-4 z-20 w-40 shadow-custom text-center bg-white rounded-2xl`}>
+            <div className={`${isOpen ? "block" : "hidden"} absolute right-0 mt-4 z-20 w-40 shadow-custom text-center bg-white rounded-2xl`}>
                 <Navigation variant={"column"} gap={"none"}>
                     <NavigationItem onClick={menuHandler} href="/#hero" className="p-3 rounded-t-2xl hover:bg-emerald-400/10">Home</NavigationItem>
                     <NavigationItem onClick={menuHandler} href="/#about" className="p-3 hover:bg-emerald-400/10">About</NavigationItem>

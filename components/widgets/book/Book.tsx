@@ -25,33 +25,30 @@ export function Book() {
             showPageCorners={false}
             disableFlipByClick={true}
             maxShadowOpacity={0.25}
-            startZIndex={20}
         >
             <div
-                className="min-[600px]:-translate-x-1/2 cursor-grab active:cursor-grabbing shadow-lg"
+                className="min-[600px]:-translate-x-1/2 cursor-pointer shadow-lg"
                 data-density="hard"
             >
                 <div className="flex pt-28 justify-center h-full bg-[url(../public/img/textures/leather-texture-bake.png)] bg-[length:200px_200px] rounded-l-sm rounded-r-md">
-                    <h3 className="text-xl md:text-2xl bg-[url(../public/img/textures/gold-texture-bake.png)] bg-clip-text text-transparent bg-[length:200px_200px] font-serif tracking-wider shadow-inner [text-shadow:_-3px_-3px_5px_rgba(0,0,0,.8),_1px_1px_2px_rgba(255,255,255,.45)]">
+                    <h3 className="text-xl md:text-2xl bg-[url(../public/img/textures/gold-texture-bake.png)] bg-clip-text  bg-[length:200px_200px] text-transparent font-serif tracking-wider shadow-inner [text-shadow:_-3px_-3px_5px_rgba(0,0,0,.8),_1px_1px_2px_rgba(255,255,255,.45)]">
                         Diploma Suplement
                     </h3>
                 </div>
             </div>
             <div
                 data-density="hard"
-                className="shadow-lg cursor-grab active:cursor-grabbing"
+                className="shadow-lg cursor-pointer"
             >
                 <div className="flex h-full p-3 bg-[url(../public/img/textures/leather-texture-bake.png)] bg-[length:200px_200px] rounded-md min-[600px]:rounded-r-none min-[600px]:pr-0">
                     <div className="flex items-center w-full h-full p-2 min-[600px]:p-5 bg-slate-50">
-                        <button onClick={e => e.stopPropagation()}>
-                            <ImageZoom src={DiplomaImage.src} alt="Diploma" zoom="200" className="rounded-md shadow-md" />
-                            {/* <Image
+                        <ImageZoom src={DiplomaImage.src} alt="Diploma" zoom="200" className="rounded-md shadow-md" />
+                        {/* <Image
                             src={DiplomaImage}
                             alt="Diploma supplement"
                             quality={100}
                             className="w-full rounded-md shadow-md"
                         /> */}
-                        </button>
                     </div>
                     <div className="hidden min-[600px]:block w-2 h-full shadow-inner bg-slate-50">
 
@@ -60,7 +57,7 @@ export function Book() {
             </div>
             <div
                 data-density="hard"
-                className="shadow-lg cursor-grab active:cursor-grabbing"
+                className="shadow-lg cursor-pointer"
             >
                 <div className="h-full p-3 bg-[url(../public/img/textures/leather-texture-bake.png)] bg-[length:200px_200px] rounded-md min-[600px]:pl-0 min-[600px]:rounded-l-none">
                     <div className="flex items-center h-full p-2 min-[600px]:p-5 bg-slate-50">
