@@ -21,10 +21,10 @@ export default function Burger() {
             </div>
             <div className={`${isOpen ? "block" : "hidden"} absolute right-5 mt-4 z-20 w-40 shadow-custom text-center bg-white rounded-2xl`}>
                 <Navigation variant={"column"} gap={"none"}>
-                    <NavigationItem onClick={menuHandler} href="#hero" className="p-3 rounded-t-2xl hover:bg-emerald-400/10">Home</NavigationItem>
-                    <NavigationItem onClick={menuHandler} href="#about" className="p-3 hover:bg-emerald-400/10">About</NavigationItem>
-                    <NavigationItem onClick={menuHandler} href="#portfolio" className="p-3 hover:bg-emerald-400/10">Portfolio</NavigationItem>
-                    <NavigationItem onClick={menuHandler} href="#contacts" className="p-3 rounded-b-2xl hover:bg-emerald-400/10">Contacts</NavigationItem>
+                    <NavigationItem onClick={menuHandler} href="/#hero" className="p-3 rounded-t-2xl hover:bg-emerald-400/10">Home</NavigationItem>
+                    <NavigationItem onClick={menuHandler} href="/#about" className="p-3 hover:bg-emerald-400/10">About</NavigationItem>
+                    <NavigationItem onClick={menuHandler} href="/#portfolio" className="p-3 hover:bg-emerald-400/10">Portfolio</NavigationItem>
+                    <NavigationItem onClick={menuHandler} href="/#contacts" className="p-3 rounded-b-2xl hover:bg-emerald-400/10">Contacts</NavigationItem>
                 </Navigation>
             </div>
         </div>

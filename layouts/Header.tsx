@@ -11,10 +11,10 @@ export function Header() {
                 </div>
                 <div className="hidden md:block">
                     <Navigation >
-                        <NavigationItem href="#hero">Home</NavigationItem>
-                        <NavigationItem href="#about">About</NavigationItem>
-                        <NavigationItem href="#portfolio">Portfolio</NavigationItem>
-                        <NavigationItem href="#contacts">Contacts</NavigationItem>
+                        <NavigationItem href="/#hero">Home</NavigationItem>
+                        <NavigationItem href="/#about">About</NavigationItem>
+                        <NavigationItem href="/#portfolio">Portfolio</NavigationItem>
+                        <NavigationItem href="/#contacts">Contacts</NavigationItem>
                     </Navigation>
                 </div>
             </div>
