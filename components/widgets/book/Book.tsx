@@ -5,6 +5,7 @@ import HTMLFlipBook from "react-pageflip";
 import DiplomaImage from "@/public/img/diploma.jpg"
 import DiplomaTumbImage from "@/public/img/diploma_thumb.jpg"
 import SupplementImage from "@/public/img/supplement.jpg"
+import SupplementThumbImage from "@/public/img/supplement_thumb.jpg"
 import Image from "next/image";
 import Magnifier from "@/components/widgets/magnifier/Magnifier"
 import InnerImageZoom from "react-inner-image-zoom";
@@ -64,13 +65,8 @@ export function Book() {
             >
                 <div className="h-full p-3 bg-[url(../public/img/textures/leather-texture-bake.png)] bg-[length:200px_200px] rounded-md min-[600px]:pl-0 min-[600px]:rounded-l-none">
                     <div className="flex items-center h-full p-2 min-[600px]:p-5 bg-slate-50">
-                        <div className="w-full rounded-md shadow-md">
-                            <InnerImageZoom
-                                src={SupplementImage.src}
-                                zoomSrc={SupplementImage.src}
-                                zoomType="hover"
-                                zoomPreload={true}
-                            />
+                        <div className="w-full rounded-sm shadow-md">
+                            <Magnifier src={SupplementThumbImage} zoomSrc={SupplementImage} />
                         </div>
 
                         {/* <Image

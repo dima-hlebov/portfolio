@@ -5,10 +5,12 @@ export default function Magnifier({ src, zoomSrc }: { src: StaticImageData, zoom
     const [backgroundPosition, setBackgroundPosition] = useState('0% 0%');
 
     const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
-        const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
-        const x = ((e.pageX - left) / width) * 100;
-        const y = ((e.pageY - top) / height) * 100;
-        setBackgroundPosition(`${x}% ${y}%`);
+        if (!('ontouchstart' in window)) {
+            const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
+            const x = ((e.pageX - left) / width) * 100;
+            const y = ((e.pageY - top) / height) * 100;
+            setBackgroundPosition(`${x}% ${y}%`);
+        }
     };
 
     return (
@@ -20,7 +22,7 @@ export default function Magnifier({ src, zoomSrc }: { src: StaticImageData, zoom
             }}
             className="w-full bg-no-repeat cursor-zoom-in"
         >
-            <Image quality={100} loading="lazy" src={src} alt="Diploma" className="block hover:opacity-0" />
+            <Image quality={100} loading="lazy" src={src} alt="Diploma" className="block min-[600px]:shover:opacity-0" />
         </figure>
     );
 }
