@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Blob } from "@/components/badges";
+import Blob from "@/components/widgets";
 import Navigation, { NavigationItem } from "@/components/navigation";
 import { IconsList } from "@/components/lists";
 import { Container } from "@/layouts";
